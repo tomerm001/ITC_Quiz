@@ -1,0 +1,195 @@
+/*quizstyling*/
+/*--------------GENERAL -------------------- */
+
+body {
+	background: url(./images/background.jpg) no-repeat center center fixed;
+	background-size: cover;
+	font-family: 'Aref Ruqaa', serif;
+	text-align: center;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.main-container {
+	width: 100%;
+	position: relative;
+}
+
+.row {
+	margin: 0;
+	padding: 0;
+}
+
+#input-area {
+	padding: 0;
+	float: none;
+    margin: 0 auto;
+}
+
+
+/*-------------- TITLE -------------------- */
+
+.title #title {
+	font-size: 40px;
+	color: white;
+}
+
+
+/* ------------ intro section --------------*/
+#intro-section {
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.intro-stripe{
+	position: relative;
+}
+
+
+#start-image {
+	position: absolute;
+	width: 30%;
+	bottom: 15px;
+	left: 15px;
+	z-index: 3;
+	visibility: visible;
+	transition: transform 0.3s;
+}
+
+#start-image:hover {
+	transform: scale(1.05,1.05);
+	transition: transform 0.7s;
+}
+
+
+/*-------------- QUESTIONS -------------------- */
+
+#question-screen{
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+#question-container{
+	transition: opacity 0.5s;
+}
+
+.answer-column {
+	padding: 0;
+	margin: 0;
+}
+
+.answer-image-container {
+	overflow: hidden;
+	width: 100%;
+}
+
+.answer-image {
+	transition: transform 0.6s;
+}
+
+.answer-image:hover {
+	transform: scale(1.1,1.1);
+	transition: transform 0.6s;
+}
+
+
+/*-------------- SOLUTION -------------------- */
+.bottom-stripe {
+	position: relative;
+}
+
+#bottom-stripe {
+	transition: opacity 0.5s;
+}
+
+#bottom-section-solution {
+	margin: 0;
+	padding: 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1s;
+
+}
+
+#solution-container {
+	position: absolute;
+	top:0px;
+	left: 0px;
+	z-index: 2;
+	/*visibility: hidden;*/
+	/*transition: 0.5s;*/
+	width: 100%;
+
+}
+
+#solution-image{
+	object-fit: cover;
+}
+
+#next-question-container {
+	position: absolute;
+	width: 30%;
+	bottom: 10px;
+	left: 30px;
+	z-index: 3;
+	/*visibility: hidden;*/
+	transition: transform 0.7s;
+}
+
+#next-question-container:hover {
+	
+	transform: scale(1.05,1.05);
+	transition: transform 0.7s;
+	
+}
+
+#vmark-image-container {
+	position: absolute;
+	width: 20%;
+	bottom: 30px;
+	right: 30px;
+	z-index: 4;
+	/*visibility: hidden;*/
+}
+
+
+/*-------Result Image* ----------------*/
+#result-screen{
+	opacity: 0;
+	transition: opacity 1s;
+
+}
+
+.result-stripe {
+	position: relative;
+	text-align: center;
+}
+
+
+#result-image {
+	visibility: visible;
+	width: 100%;
+}
+
+.score {
+	position: absolute;
+	bottom: 35%;
+	left: 0;
+	color: white;
+	font-size: 60px;
+	width: 100%;
+}
+
+.score p {
+	text-align: center;
+}
